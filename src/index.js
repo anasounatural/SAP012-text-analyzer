@@ -4,3 +4,4 @@ import analyzer from './analyzer.js';
 
 const textarea = document.querySelector('[name="user-input"]');
 elemento = document.getElementById("container")
+oninput
