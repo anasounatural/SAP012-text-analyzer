@@ -1,0 +1,64 @@
+
+/*É o seletor ID codado no html como main*/
+#container {
+    text-align: center;
+}
+
+body {background-color:rgb(109, 140, 79);
+
+}
+
+/*Seletor de elemento no html header e footer. Associei os 2 elementos no mesmo seletor*/
+/*Como mudar cor de fonte sem mudar fundo????????*/
+header, footer {
+    background-color: rgb(1, 74, 8);
+    color:rgb(207, 207, 102); 
+    margin-top: 0px;
+ }
+
+
+ footer{
+  text-align: right;
+  padding-right: 5px;
+}
+
+/*seletor de classe css aplicada no html do pai ul e filho li*/
+.style1 {
+  
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight:normal
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(56, 31, 2); 
+    border-radius:10px;
+    border: outset;
+    margin: 0px 500px 0px 500px; 
+    padding: 10px 20px;
+    List-style-type: none;
+}
+
+/*seletor de atributo*/
+#reset-button {
+    background-color: rgb(1,74, 8); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de apontar */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin: 5px 500px;
+    border: outset; /* Tipos por nome: thin, thick, solid, etc */
+    border-radius: 10px; /* Borda arredondada */
+  }
+
+  /*Pseudo seletor mudar cor ao passar mouse por cima, Nçao funciona???? Só vai fucnionar no java?*/
+  reset-button:hover {
+    color: rgba(187, 183, 183, 0.31); 
+  }
+
+/*Selector de atributo. De alguma forma serve pra puxar lá no java. Funciona como se fosse um class???*/
+  textarea[name="user-input"] {
+    width: 450px;
+    height:150px;
+    margin: 30px 500px;
+    border-radius:15px;
+
+}
