@@ -1,4 +1,4 @@
-/*É o seletor ID codado no html como main*/
+/*  # É o seletor ID codado no html como main*/
 #container {
   text-align: center;
 }
@@ -8,8 +8,8 @@ body {
 
 }
 
-/*Seletor de elemento no html header e footer. Associei os 2 elementos no mesmo seletor*/
-/*Como mudar cor de fonte sem mudar fundo????????*/
+/*Associei os 2 elementos  headr e footer no mesmo seletor*/
+
 header,
 footer {
   background-color: rgb(1, 74, 8);
@@ -40,26 +40,19 @@ footer {
 
 /*seletor de atributo*/
 #reset-button {
-  background-color: rgb(1, 74, 8);
-  /* Cor de fundo */
-  color: white;
-  /* Cor do texto */
-  font-size: 16px;
-  /* Tamanho da fonte */
-  cursor: pointer;
-  /* Cursor de apontar */
-  padding: 10px 20px;
-  /* Espaçamento interno */
+  background-color: rgb(1, 74, 8); /* Cor de fundo */
+  color: white; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de apontar */
+  padding: 10px 20px; /* Espaçamento interno */
   margin: 5px 500px;
-  border: outset;
-  /* Tipos por nome: thin, thick, solid, etc */
-  border-radius: 10px;
-  /* Borda arredondada */
+  border: outset; /* Tipos por nome: thin, thick, solid, etc */
+  border-radius: 10px; /* Borda arredondada */
 }
 
-/*Pseudo seletor mudar cor ao passar mouse por cima, Nçao funciona???? Só vai fucnionar no java?*/
+
 #reset-button:hover {
-  color: rgba(187, 183, 183, 0.31);
+  color: rgba(187, 183, 183, 0.31); /*Pseudo seletor mudar cor ao passar mouse por cima*/
 }
 
 /*Selector de atributo. De alguma forma serve pra puxar lá no java. Funciona como se fosse um class???*/

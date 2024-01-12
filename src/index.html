@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head> <!--Seção com metadado não vísiveis-->
   <meta charset="utf-8">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
-</head>
+</head> 
 
 
 <body>
-  <!--Marcação main para puxar no CSS uma edição aplicada em todo o body-->
-  <main id="container">
+  
+  <main id="container"> <!--Main marcação que encaixota conteúdo principal do texto. Aqui vai puxar no CSS uma edição aplicada em todo o body. O Id é opcional, mas como é o único main do documento então é boa prática-->
 
 
     <header>
       <h1>Analizador de Textos</h1>
     </header>
 
-    <!-- Qual será resultado dessa parte no Js????? -->
     <textarea name="user-input"></textarea>
 
-    <!--Qual sera resultado do class no CSS e do data-testid no java?????-->
-
-    <ul>
+    
+    <ul> 
       <li class="style1" data-testid="word-count"> Total de palavras </li>
       <li class="style1" data-testid="character-count"> Total de caractéres </li>
       <li class="style1" data-testid="character-no-spaces-count"> Total de caracteres sem espaço </li>
       <li class="style1" data-testid="number-count"> Número total </li>
-      <li class="style1" data-testid="number-sum"> Soma de Números </li>
-      <li class="style1" data-testid="word-length-average"> Tamanho médio das palavras </li>
-    </ul>
+      <li class="style1" data-testid="number-sum"> Soma de Números </li> <!--sintaxe do atributo é atributo="nome do valor"-->
+      <li class="style1" data-testid="word-length-average"> Tamanho médio das palavras </li> <!-- data-testid = fornecer um identificador único e estável para um elemento específico na página-->
+    </ul> <!-- Essa lista é desordenada em contraposilçao a ol -->
 
     <p>
       <button id="reset-button"> Reiniciar </button>

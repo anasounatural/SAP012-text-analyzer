@@ -1,9 +1,9 @@
 import analyzer from './analyzer.js';
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
+
 //DECLARAÇÕES 
-const textArea = document.querySelector('[name="user-input"]'); // Pego o atributo name="user-input" no html e declaro com nome textarea
-const button = document.getElementById("reset-button");
-const wordCount = document.querySelector('[data-testid="word-count"]');
+const textArea = document.querySelector('[name="user-input"]'); // Pega o atributo name="user-input" no html e declaro com nome textarea
+const button = document.getElementById('reset-button');
+const wordCount = document.querySelector('[data-testid="word-count"]'); //nomes das contantes aqui estao só aqui. o que liga c html é dentro do  parenteses.  [] é sintaxe padrão do query selector
 const characterCount = document.querySelector('[data-testid="character-count"]');
 const characterNoSpacesCount = document.querySelector('[data-testid="character-no-spaces-count"]');
 const numberCount = document.querySelector('[data-testid="number-count"]');
@@ -24,39 +24,16 @@ function resetar() {
   numberSum.textContent = "Soma de Numeros: 0";
   wordLengthAverage.textContent = "Tamanho Medio das Palavras: 0";
 }
-
-function metricas() {
-  const text = textArea.value; //Text area é o quadrado e value é o digitado no quadrado
-  wordCount.textContent = "Contagem de palavras: " + analyzer.getWordCount(text);
-  characterCount.textContent = "Contagem de Caracteres: " + analyzer.getCharacterCount(text);
-  characterNoSpacesCount.textContent = "Contagem de Caracteres sem Espaços: " + analyzer.getCharacterCountExcludingSpaces(text);
-  numberCount.textContent = "Contagem de Numeros:" + analyzer.getNumberCount(text);
-  numberSum.textContent = "Soma de Numeros:" + analyzer.getNumberSum(text);
-  wordLengthAverage.textContent = "Tamanho Medio das Palavras:" + analyzer.getAverageWordLength(text);
-
-}
-
 //CONEXÃO DE AÇÃO COM ANALYZER
 
+function metricas() {
+  const digitacao = textArea.value; //Text area é o quadrado e value é o digitado no quadrado; value é p quanhaverá entrada de informação e textContent pra quando a  info é fixa
+  wordCount.textContent = "Contagem de Palavras: " + analyzer.getWordCount(digitacao);
+  characterCount.textContent = "Contagem de Caracteres: " + analyzer.getCharacterCount(digitacao);
+  characterNoSpacesCount.textContent = "Contagem de Caracteres sem Espaços: " + analyzer.getCharacterCountExcludingSpaces(digitacao);
+  numberCount.textContent = "Contagem de Números: " + analyzer.getNumberCount(digitacao);
+  numberSum.textContent = "Soma de Números: " + analyzer.getNumberSum(digitacao);
+  wordLengthAverage.textContent = "Tamanho Médio das Palavras: " + analyzer.getAverageWordLength(digitacao); //pegue o TextContent do que declarei como WordLengthAverage e Escreva a string Tamanho medio das palvras + o resultado da função que chamei de GetWordLength no Analyzer para maniulas esses dados (digitacao)  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MINHA PRIMEIRA TENTATIVA
-const resetbutton = document.getElemetById('reset-button'); //Declarando no js um elemento de id buscado no html
-const textarea = document.querySelector("user-input"); //Declrando no js um elemento de tag buscado no html
-
-resetbutton.addEventListener(click, funciton[textarea.value = '']); //apaga a text area - qual nome da sintaxe desse textearea.value.
-textarea.addEventListener(input, function (){ })
-*/
+}
 
