@@ -1,6 +1,6 @@
 import analyzer from './analyzer.js';
 
-//DECLARAÇÕES 
+//DECLARAÇÕES DOM
 const textArea = document.querySelector('[name="user-input"]'); // Pega o atributo name="user-input" no html e declaro com nome textarea
 const button = document.getElementById('reset-button');
 const wordCount = document.querySelector('[data-testid="word-count"]'); //nomes das contantes aqui estao só aqui. o que liga c html é dentro do  parenteses.  [] é sintaxe padrão do query selector
